@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+.header {
+  padding: 10px;
+  text-align: left;
+  background: #42454D;
+  color: #98A0B3;
+}
+
+.navbar {
+  display: flex;
+  background-color: #525867;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.navbar a {
+  color: #9FA5B3;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.navbar a:hover {
+  background-color: #736D60;
+  color: #CCC1AA;
+}
+
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.side {
+  flex: 30%;
+  background-color: #9A8E77;
+  padding: 20px;
+}
+
+.main {
+  flex: 70%;
+  background-color: #9FA5B3;
+  padding: 20px;
+}
+
+.row-intr {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column {
+  flex: 50%;
+  max-width: 50%;
+  padding: 0 4px;
+}
+
+@media screen and (max-width: 700px){
+.column { 
+flex: 100%;
+max-width:100%;
+}
+}
+
+.layer1 {
+    background: #525867;
+    padding: 10px;
+	width: 100%;
+	color: #98A0B3;
+}
+
+.layer2 {
+    background: #525867;
+    padding: 10px;
+	width: 100%;
+	color: #98A0B3;
+	margin-top:10px;
+}
+
+.layer3 {
+    background: #9A8E77;
+    padding: 10px;
+	width: 100%;
+	color: #525867;
+	margin-top:10px;
+}
+
+.flex-container {
+  display: flex;
+  background-color: #9A8E77;
+}
+
+.flex-container > div {
+  background-color: #525867;
+  color: white;
+  width: 60px;
+  height: 60px;
+}
+
+.flex-container2 > div {
+  background-color:  #525867;
+  color: #9FA5B3;
+  width: 100%;
+  height: 30px;
+  padding-left:10px;
+  padding-top:10px;
+  padding-bottom:10px;
+  font-size: small;
+  flex-direction: column;
+}
+
+.flex-container3 {
+  display: flex;
+  background-color: #9A8E77;
+}
+
+.flex-container3 > div {
+  background-color: #9A8E77;
+  width: 60px;
+  height: 60px;
+}
+
+.flex-container4 {
+  display: flex;
+  background-color: #9A8E77;
+}
+
+.flex-container4 > div {
+  background-color: #9A8E77;
+  width: 60px;
+  height: 100%;
+}
+
+.zapisi {
+  flex: 20%;
+  background-color: #9A8E77;
+  padding: 20px;
+  height: 100%;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #42454D;
+  color: #98A0B3;
+}
+
+@media screen and (max-width: 700px) {
+  .row, .navbar {   
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<div class="header">
+   <h1 style="margin-left: 2%;">meet YOUR actor</h1>
+  <div class="navbar">
+	<a href="#">Настройки</a>
+  </div>
+</div>
+
+<!-- The flexible grid (content) -->
+<div class="row">
+  
+  <div class="side">
+    <div class="navbar">
+	  <a href="#">Профиль</a>
+	  <a href="#">Друзья</a>
+	  <a href="#">Фотографии</a>
+	  <a href="#">Видеозаписи</a>   
+	  <a href="#">Аудиозаписи</a>
+   	  <a href="#">Сообщения</a>
+	  <a href="#">Сообщества</a>
+	  <a href="#">Новости</a>  
+	</div>
+  </div>
+	
+  <div class="main">
+	<div class="row-intr">
+      <div class="column">
+		<h2 style="color:#1B2643;">Никита Ефремов</h2>
+		<img src="https://avrorra.com/wp-content/uploads/2020/11/imagetools3-29.jpg" style="width:100%;">
+		<div class="navbar">
+		  <a href="#">Добавить в друзья</a>
+		  <a href="#">Написать сообщение</a>
+		  <a href="#">Новости</a>
+		</div>
+		<h3 style="text-align: center;color:#1B2643;">Подписчиков: 816,9K</h3>
+		<div class="layer1">
+		  <h3>Лучшие друзья</h3>
+		  <div class="flex-container">
+			<div>
+			  <img src="https://a-kadr.ru/wp-content/uploads/2016/09/picture_A7568C8C-FD18-4C9F-8E64-40D0B9866DF5.jpg" 
+			  style="width:50px; height: 60px; font-size: 30px;">
+			</div>
+			<div>
+			  <img src="https://www.kino-teatr.ru/acter/album/5388/655689.jpg" 
+			  style="width:50px; height: 60px; font-size: 30px;">
+			</div>
+            <div>
+			  <img src="https://www.gup.ru/upload/medialibrary/a57/US5_9502.jpg" 
+			  style="width:50px; height: 60px; font-size: 30px;">
+			</div>
+            <div>
+			  <img src="https://ruskino.ru/media/photo/7006/BDBZ2NVhAyep5mNePNYpC3p7VjW.jpg" 
+			  style="width:50px; height: 60px; font-size: 30px;">
+			</div>			
+			<div>
+			  <img src="https://st03.kakprosto.ru/tumb/680/images/article/2020/1/14/340798_5e1d5ba29f7025e1d5ba29f73d.jpeg" 
+			  style="width:80px; height: 60px; font-size: 30px;">
+			</div>
+		  </div>
+		</div>
+		  
+		<div class="layer2">
+		  <h3>Друзья онлайн</h3>
+		  <div class="flex-container">
+			<div>
+			  <img src="https://games-of-thrones.ru/sites/default/files/pictures/all/nikita/14.jpg" 
+			  style="width:50px; height: 60px; font-size: 30px;">
+			</div>
+			<div>
+			  <img src="https://2aktera.ru/uploads/gallery/1423/novaia-passiia-maksima-vitorgana-i-ego-zhizn-posle-razvoda.jpg" 
+			  style="width:50px; height: 60px; font-size: 30px;">
+			</div>
+			<div>
+			  <img src="https://goryachie-foto.net/wp-content/uploads/2019/07/3101141839-670x838.jpg" 
+			  style="width:50px; height: 60px; font-size: 30px;">
+			</div> 
+			<div>
+			  <img src="https://skolkolet.com/images/5da7abc4cbf3ee35e3b1cdd5/medium-mariya-zykova@2x.jpg" 
+			  style="width:50px; height: 60px; font-size: 30px;">
+			</div>
+			<div>
+			  <img src="https://xn--p1abaa.online/wp-content/uploads/2021/01/23510.jpg" 
+			  style="width:80px; height: 60px; font-size: 30px;">
+			</div>
+		  </div>
+		</div>
+	  </div>
+		
+	  <div class="column">
+		<h3 style="text-align: right; color:#1B2643;">online</h3>
+		<h3 style="text-align: left; color:#1B2643;">Работа: актер театра, кино, озвучивания и дубляжа</h3>
+		<div class="flex-container2">
+		  <div>Город: Москва</div>
+		  <div>День Рождения: 30 мая 1988 года (33 года)</div>
+		  <div>Семейное положение: в браке с Яна Гладких</div>
+		  <div>Подробная информация: ...</div>
+		</div>
+		<div class="layer3" style="margin-top:10px;">
+		  <h3>Фотографии</h3>
+		  <div class="flex-container3" style="height:100px;">
+			<div>
+			  <img src="https://tvcenter.ru/wp-content/uploads/2020/07/efremovefremov_83314423_2562858817370642_1524608333077836071_n.jpg" 
+			  style="width:50px; height: 60px; font-size: 30px;">
+			</div>
+			<div>
+			  <img src="https://pbs.twimg.com/media/EtEMo4bXMAkS-VZ.jpg" 
+			  style="width:50px; height: 60px; font-size: 30px;">
+			</div>
+			<div>
+			  <img src="https://muzhyazheny.ru/wp-content/uploads/2021/08/5-1.jpg" 
+			  style="width:50px; height: 60px; font-size: 30px;">
+			</div>
+			<div>
+			  <img src="https://tvcenter.ru/wp-content/uploads/2020/07/efremovefremov_70990425_393439908249486_9179993568712867191_n.jpg" 
+			  style="width:50px; height: 60px; font-size: 30px;">
+			</div> 
+			<div>
+			  <img src="https://gazeta-don.ru/upload/iblock/68b/68b4fb4cd99fa96156f61124b91910d7.JPG" 
+			  style="width:50px; height: 60px; font-size: 30px;">
+			</div>
+			<div>
+			  <img src="https://avatars.mds.yandex.net/get-zen_doc/99845/pub_5ce6612ee8723900b4326756_5ce66154e8723900b4326757/scale_1200" 
+			  style="width:80px; height: 60px; font-size: 30px;">
+			</div>
+          </div>  
+		</div>
+		  
+		<div class="layer3" style="margin-top:10px;">
+		    <h3>Мои последние записи</h3>
+		  <div class="zapisi">
+		    <div class="flex-container4">
+			  <div style="flex-grow: 1">
+			    <img src="https://tvcenter.ru/wp-content/uploads/2020/07/efremovefremov_83314423_2562858817370642_1524608333077836071_n.jpg" 
+			    style="width:50px; height: 60px; font-size: 30px;">
+			  </div>
+			  <div style="flex-grow: 6; color:#1B2643;"> Планете не нужно большое количество "успешных людей". Планета отчаянно нуждается в миротворцах, целителях,
+			  реставраторах, рассказчиках и любящих всех видов. Она нуждается в людях, рядом с которыми хорошо жить. Далай-лама. </div>
+            </div>		  
+	      </div>
+		  <div class="zapisi">
+		    <div class="flex-container4">
+			  <div style="flex-grow: 1">
+			    <img src="https://tvcenter.ru/wp-content/uploads/2020/07/efremovefremov_83314423_2562858817370642_1524608333077836071_n.jpg" 
+			    style="width:50px; height: 60px; font-size: 30px;">
+			  </div>
+			  <div style="flex-grow: 6; color:#1B2643;"> У всех у нас есть страхи. Но у тех, кто смотрит им в лицо, есть еще и мужество. Эрнест Хемингуэй. </div>
+            </div>		  
+	      </div>
+		   <div class="zapisi">
+		    <div class="flex-container4">
+			  <div style="flex-grow: 1">
+			    <img src="https://tvcenter.ru/wp-content/uploads/2020/07/efremovefremov_83314423_2562858817370642_1524608333077836071_n.jpg" 
+			    style="width:50px; height: 60px; font-size: 30px;">
+			  </div>
+			  <div style="flex-grow: 6; color:#1B2643;"> Не тот твой друг, кто за столом с тобою пьёт,а кто в несчастии любом на выручку придёт.
+                                                         Кто руку твёрдую подаст, избавит от тревог.И даже вида не подаст, что он тебе помог. Омар Хайям. </div>
+            </div>
+			</div>
+			<div class="zapisi">
+            <div class="flex-container4">
+			  <div style="flex-grow: 1">
+			    <img src="https://tvcenter.ru/wp-content/uploads/2020/07/efremovefremov_83314423_2562858817370642_1524608333077836071_n.jpg" 
+			    style="width:50px; height: 60px; font-size: 30px;">
+			  </div>
+			  <div style="flex-grow: 6; color:#1B2643;"> Нелепо искать совершенства. Камиль Писсарро. </div>
+            </div>	
+            </div>			
+	       </div>
+	    </div>
+      </div>
+    </div>
+</div>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+  <h2>2020-2021 meetYOURactor.com</h2>
+</div>
+
+</body>
+</html>
